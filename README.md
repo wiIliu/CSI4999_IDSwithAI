@@ -137,7 +137,7 @@ This project is licensed under the [MIT License](LICENSE). You’re free to use,
 
 ## References
 
-1. **Caltech101 Dataset** – B. S. and R. Nagapadma, “RT-IoT2022 ,” UCI Machine Learning Repository, 2023, DOI: https://doi.org/10.24432/C5P338.
+1. **RT-IoT2022 Dataset** – B. S. and R. Nagapadma, “RT-IoT2022 ,” UCI Machine Learning Repository, 2023, DOI: https://doi.org/10.24432/C5P338.
 
 ---
 
