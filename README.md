@@ -180,7 +180,7 @@ After downloading, run `dataPreprocessScript.py` to split the dataset into **tra
 python dataPreprocessScript.py
 ```
 
-Optionally open `dataAnalysisVisualization.ipynb` to explore class distributions and feature statistics before training.
+Optionally, open `dataAnalysisVisualization.ipynb` to explore class distributions and feature statistics before training.
 
 ### 2. Model Training
 
@@ -220,7 +220,7 @@ For edge inference, see `edge/inference.py` or `edge/inference.ipynb`.
 | CNN (baseline) | 0.9913 | 0.9940 | 0.9964 | 0.9952 | 0.9522 |
 | CNN + Self-Attention | 0.9900 | 0.9911 | 0.9978 | 0.9945 | 0.9443 |
 
-ML ensemble models achieved the strongest binary performance. The baseline CNN, while slightly behind, reached a competitive F1 of 99.52% and — critically — is the only architecture compatible with full quantization and DPU deployment on the target hardware.
+ML ensemble models achieved the strongest binary performance. The baseline CNN, while slightly behind, reached a competitive F1 of 99.52% and, notably, is the only architecture compatible with full quantization and DPU deployment on the target hardware given the scope of the project.
 
 ### Multi-Class Classification (12 classes)
 
@@ -235,7 +235,7 @@ The baseline CNN struggled with the five NMAP scan subclasses, collapsing them i
 
 ### Edge Deployment
 
-Only the **baseline CNN** was quantized and deployed to the Kria KV260 DPU (the attention variant was not compatible with the target DPU configuration).
+Only the **baseline CNN** models were quantized and deployed to the Kria KV260 DPU (the attention variant was not compatible with the target DPU configuration given scope).
 
 **Binary — per-sample inference latency:**
 
